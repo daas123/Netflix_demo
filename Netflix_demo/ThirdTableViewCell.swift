@@ -7,14 +7,33 @@
 
 import UIKit
 
-class ThirdTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var thirdcelllabel: UILabel!
-    @IBOutlet weak var thirdcellimage: UIImageView!
+class ThirdTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
+    var movies1 = [
+        details(label: "Godzilla", img: "Godzilla" ),
+        details(label: "Avengers Endgame", img: "Avengers Endgame"),
+        details(label: "jocker", img: "jocker"),
+        details(label: "Joker (2019 Movie)", img: "Joker (2019 Movie)"),
+        details(label: "lord of the rings", img: "lord of the rings"),
+    ]
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return movies1.count
+    }
     
-    @IBOutlet weak var thirdcellright: UIImageView!
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionviewcell1", for: indexPath) as! FirstCollectionViewCell
+        var lbl = movies1[indexPath.row]
+        cell.labelcollectionview.text = lbl.label
+        cell.imagecollectionview.image = UIImage(named: lbl.img)
+        return cell
+    }
+    
+    @IBOutlet weak var collectioview: UICollectionView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        collectioview.dataSource = self
+        collectioview.delegate = self
+        
         // Initialization code
     }
 

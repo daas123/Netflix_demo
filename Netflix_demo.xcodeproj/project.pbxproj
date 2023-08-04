@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9230ED362A7CCFE500C29185 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9230ED352A7CCFE500C29185 /* SecondTableViewCell.swift */; };
-		9230ED382A7CD55500C29185 /* ThirdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9230ED372A7CD55500C29185 /* ThirdTableViewCell.swift */; };
+		9230ED3C2A7CE5A800C29185 /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9230ED3B2A7CE5A800C29185 /* FirstCollectionViewCell.swift */; };
+		9230ED3E2A7CFCEF00C29185 /* ThirdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9230ED3D2A7CFCEF00C29185 /* ThirdTableViewCell.swift */; };
 		9294B7062A7CB56E00F35787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294B7052A7CB56E00F35787 /* AppDelegate.swift */; };
 		9294B7082A7CB56E00F35787 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294B7072A7CB56E00F35787 /* SceneDelegate.swift */; };
 		9294B70A2A7CB56E00F35787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294B7092A7CB56E00F35787 /* ViewController.swift */; };
@@ -40,7 +41,8 @@
 
 /* Begin PBXFileReference section */
 		9230ED352A7CCFE500C29185 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
-		9230ED372A7CD55500C29185 /* ThirdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableViewCell.swift; sourceTree = "<group>"; };
+		9230ED3B2A7CE5A800C29185 /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
+		9230ED3D2A7CFCEF00C29185 /* ThirdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableViewCell.swift; sourceTree = "<group>"; };
 		9294B7022A7CB56E00F35787 /* Netflix_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9294B7052A7CB56E00F35787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9294B7072A7CB56E00F35787 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,7 +113,8 @@
 				9294B7092A7CB56E00F35787 /* ViewController.swift */,
 				9294B7352A7CBB7900F35787 /* detailTableViewCell.swift */,
 				9230ED352A7CCFE500C29185 /* SecondTableViewCell.swift */,
-				9230ED372A7CD55500C29185 /* ThirdTableViewCell.swift */,
+				9230ED3D2A7CFCEF00C29185 /* ThirdTableViewCell.swift */,
+				9230ED3B2A7CE5A800C29185 /* FirstCollectionViewCell.swift */,
 				9294B7102A7CB57000F35787 /* LaunchScreen.storyboard */,
 				9294B70E2A7CB57000F35787 /* Assets.xcassets */,
 				9294B7132A7CB57000F35787 /* Info.plist */,
@@ -270,9 +273,10 @@
 				9294B70A2A7CB56E00F35787 /* ViewController.swift in Sources */,
 				9230ED362A7CCFE500C29185 /* SecondTableViewCell.swift in Sources */,
 				9294B7062A7CB56E00F35787 /* AppDelegate.swift in Sources */,
+				9230ED3C2A7CE5A800C29185 /* FirstCollectionViewCell.swift in Sources */,
 				9294B7362A7CBB7900F35787 /* detailTableViewCell.swift in Sources */,
 				9294B7082A7CB56E00F35787 /* SceneDelegate.swift in Sources */,
-				9230ED382A7CD55500C29185 /* ThirdTableViewCell.swift in Sources */,
+				9230ED3E2A7CFCEF00C29185 /* ThirdTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

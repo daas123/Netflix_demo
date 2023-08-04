@@ -7,7 +7,28 @@
 
 import UIKit
 
+struct details{
+    var label:String
+    var img: String
+}
+
 class ViewController: UIViewController {
+    
+    // Array for notification and bellicon
+    var arr = [
+        details(label: "Notification", img: "bellicon"),
+        details(label: "Download", img: "download")
+    
+    ]
+    
+    //Array for first collection view
+    var movies1 = [
+        details(label: "Godzilla", img: "Godzilla" ),
+        details(label: "Avengers Endgame", img: "Avengers Endgame"),
+        details(label: "jocker", img: "jocker"),
+        details(label: "Joker (2019 Movie)", img: "Joker (2019 Movie)"),
+        details(label: "lord of the rings", img: "lord of the rings"),
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,11 +56,8 @@ class ViewController: UIViewController {
 
 extension ViewController : UITableViewDelegate , UITableViewDataSource {
     
-   
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 6
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -50,28 +68,18 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
             cell.downlocon.image = UIImage(systemName: "chevron.down")
             return cell
         }
-        else if indexPath.row == 1
+        else if indexPath.row == 1 || indexPath.row == 2
         {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath ) as! SecondTableViewCell
-            cell.secondcelllabel.text = "Notifications"
-            cell.secondrowicon.image = UIImage(named: "bellicon")
+            cell.secondcelllabel.text = arr[indexPath.row-1].label
+            cell.secondrowicon.image = UIImage(named: arr[indexPath.row-1].img)
             cell.secondCellRightArrow.image = UIImage(named: "chevron.right")
-            return cell
-        }
-        else if indexPath.row == 2
-        {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell3", for: indexPath ) as! ThirdTableViewCell
-            cell.thirdcelllabel.text = "Downloads"
-            cell.thirdcellimage.image = UIImage(named: "download")
-            cell.thirdcellright.image = UIImage(named: "chevron.right")
             return cell
         }
         else
         {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell3", for: indexPath ) as! ThirdTableViewCell
-            cell.thirdcelllabel.text = "Downloads"
-            cell.thirdcellimage.image = UIImage(named: "download")
-            cell.thirdcellright.image = UIImage(named: "chevron.right")
+            cell.collectioview.tag = indexPath.section
             return cell
             
         }
@@ -79,21 +87,12 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 0
-        {
+        if indexPath.row == 0{
             return 180
-        }
-        else if indexPath.row == 1
-        {
+        }else if indexPath.row == 1 || indexPath.row == 2{
             return 45
-        }
-        else if indexPath.row == 2
-        {
-            return 45
-        }
-        else 
-        {
-            return 45
+        }else{
+            return 191
         }
         
     }
