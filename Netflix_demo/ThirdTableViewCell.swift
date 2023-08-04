@@ -1,5 +1,5 @@
 //
-//  SecondTableViewCell.swift
+//  ThirdTableViewCell.swift
 //  Netflix_demo
 //
 //  Created by Neosoft on 04/08/23.
@@ -7,13 +7,12 @@
 
 import UIKit
 
-class SecondTableViewCell: UITableViewCell {
+class ThirdTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var secondrowicon: UIImageView!
+    @IBOutlet weak var thirdcelllabel: UILabel!
+    @IBOutlet weak var thirdcellimage: UIImageView!
     
-    @IBOutlet weak var secondcelllabel: UILabel!
-    
-    @IBOutlet weak var secondCellRightArrow: UIImageView!
+    @IBOutlet weak var thirdcellright: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

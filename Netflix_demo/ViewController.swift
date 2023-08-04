@@ -39,7 +39,7 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,14 +55,25 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath ) as! SecondTableViewCell
             cell.secondcelllabel.text = "Notifications"
             cell.secondrowicon.image = UIImage(named: "bellicon")
+            cell.secondCellRightArrow.image = UIImage(named: "chevron.right")
+            return cell
+        }
+        else if indexPath.row == 2
+        {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell3", for: indexPath ) as! ThirdTableViewCell
+            cell.thirdcelllabel.text = "Downloads"
+            cell.thirdcellimage.image = UIImage(named: "download")
+            cell.thirdcellright.image = UIImage(named: "chevron.right")
             return cell
         }
         else
         {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath ) as! SecondTableViewCell
-            cell.secondcelllabel.text = "hello"
-            cell.secondrowicon.image = UIImage(named: "bellicon")
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell3", for: indexPath ) as! ThirdTableViewCell
+            cell.thirdcelllabel.text = "Downloads"
+            cell.thirdcellimage.image = UIImage(named: "download")
+            cell.thirdcellright.image = UIImage(named: "chevron.right")
             return cell
+            
         }
         
     }
