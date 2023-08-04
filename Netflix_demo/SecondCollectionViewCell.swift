@@ -9,4 +9,6 @@ import UIKit
 
 class SecondCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var collectviewimage: UIImageView!
+    @IBOutlet weak var collectionviewlabel: UILabel!
 }

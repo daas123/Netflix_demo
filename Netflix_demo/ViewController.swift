@@ -87,7 +87,12 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
             cell.fouthcelllabel.text = arr2[indexPath.row-4]
             cell.rightarrow.image = UIImage(named: "chevron.right")
             return cell
-        }else
+        }else if indexPath.row == 5{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell5", for: indexPath ) as! FiftTableViewCell
+            cell.collectionview2.tag = indexPath.section
+            return cell
+        }
+        else
         {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell3", for: indexPath ) as! ThirdTableViewCell
             cell.collectioview.tag = indexPath.section

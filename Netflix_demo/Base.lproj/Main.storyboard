@@ -228,7 +228,7 @@
                                             <outlet property="rightarrow" destination="iuQ-AS-A4V" id="UAL-cW-7FS"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ThirdTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell5" rowHeight="200" id="fu3-7A-LhF" customClass="ThirdTableViewCell" customModule="Netflix_demo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="FiftTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell5" rowHeight="200" id="fu3-7A-LhF" customClass="FiftTableViewCell" customModule="Netflix_demo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="516" width="393" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fu3-7A-LhF" id="6dh-Iw-HoZ">
@@ -239,31 +239,31 @@
                                                     <rect key="frame" x="5" y="0.0" width="388" height="200"/>
                                                     <color key="backgroundColor" red="0.34506028890000001" green="0.095229886469999997" blue="0.1169512942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EPz-Qh-B2h">
-                                                        <size key="itemSize" width="219" height="191"/>
+                                                        <size key="itemSize" width="130" height="191"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FirstCollectionViewCell" reuseIdentifier="collectionviewcell1" id="w7h-a5-D4l" customClass="FirstCollectionViewCell" customModule="Netflix_demo" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="4.666666666666667" width="219" height="191"/>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="SecondCollectionViewCell" reuseIdentifier="collectionviewcell2" id="w7h-a5-D4l" customClass="SecondCollectionViewCell" customModule="Netflix_demo" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="4.666666666666667" width="130" height="191"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wfH-W0-RmV">
-                                                                <rect key="frame" x="0.0" y="0.0" width="219" height="191"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="191"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avengers Endgame" translatesAutoresizingMaskIntoConstraints="NO" id="VK1-ue-WJt">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="219" height="156"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="156"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="156" id="RWF-KL-DBl"/>
-                                                                            <constraint firstAttribute="width" constant="219" id="hXp-74-x4Y"/>
+                                                                            <constraint firstAttribute="width" constant="130" id="qj5-g6-kXq"/>
                                                                         </constraints>
                                                                     </imageView>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3z-L6-Zgm">
-                                                                        <rect key="frame" x="0.0" y="156" width="219" height="35"/>
+                                                                        <rect key="frame" x="0.0" y="156" width="130" height="35"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advenger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHQ-S1-hqV">
-                                                                                <rect key="frame" x="70.333333333333314" y="7" width="78.666666666666686" height="21"/>
+                                                                                <rect key="frame" x="25.666666666666664" y="7" width="78.666666666666686" height="21"/>
                                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
@@ -288,10 +288,10 @@
                                                                     <constraint firstAttribute="trailing" secondItem="VK1-ue-WJt" secondAttribute="trailing" id="naa-JX-5sp"/>
                                                                 </constraints>
                                                             </collectionViewCellContentView>
-                                                            <size key="customSize" width="219" height="191"/>
+                                                            <size key="customSize" width="130" height="191"/>
                                                             <connections>
-                                                                <outlet property="imagecollectionview" destination="VK1-ue-WJt" id="guO-2x-ZRZ"/>
-                                                                <outlet property="labelcollectionview" destination="BHQ-S1-hqV" id="o44-M2-yb4"/>
+                                                                <outlet property="collectionviewlabel" destination="BHQ-S1-hqV" id="Bg4-MF-URa"/>
+                                                                <outlet property="collectviewimage" destination="VK1-ue-WJt" id="Ne9-hU-lFo"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
@@ -307,7 +307,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                                         <connections>
-                                            <outlet property="collectioview" destination="9xn-x9-CtF" id="ryN-au-6W6"/>
+                                            <outlet property="collectionview2" destination="9xn-x9-CtF" id="zF9-Ko-sLo"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
