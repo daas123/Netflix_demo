@@ -14,5 +14,10 @@ class FirstCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var labelcollectionview: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        imagecollectionview.layer.cornerRadius = 5
+        labelcollectionview.layer.cornerRadius = 5
+    }
     
 }
