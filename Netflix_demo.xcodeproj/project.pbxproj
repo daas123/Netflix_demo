@@ -16,6 +16,7 @@
 		9294B71D2A7CB57100F35787 /* Netflix_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294B71C2A7CB57100F35787 /* Netflix_demoTests.swift */; };
 		9294B7272A7CB57100F35787 /* Netflix_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294B7262A7CB57100F35787 /* Netflix_demoUITests.swift */; };
 		9294B7292A7CB57100F35787 /* Netflix_demoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294B7282A7CB57100F35787 /* Netflix_demoUITestsLaunchTests.swift */; };
+		9294B7362A7CBB7900F35787 /* detailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294B7352A7CBB7900F35787 /* detailTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9294B7222A7CB57100F35787 /* Netflix_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Netflix_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9294B7262A7CB57100F35787 /* Netflix_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netflix_demoUITests.swift; sourceTree = "<group>"; };
 		9294B7282A7CB57100F35787 /* Netflix_demoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netflix_demoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9294B7352A7CBB7900F35787 /* detailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				9294B70B2A7CB56E00F35787 /* Main.storyboard */,
 				9294B70E2A7CB57000F35787 /* Assets.xcassets */,
 				9294B7102A7CB57000F35787 /* LaunchScreen.storyboard */,
+				9294B7352A7CBB7900F35787 /* detailTableViewCell.swift */,
 				9294B7132A7CB57000F35787 /* Info.plist */,
 			);
 			path = Netflix_demo;
@@ -260,6 +263,7 @@
 			files = (
 				9294B70A2A7CB56E00F35787 /* ViewController.swift in Sources */,
 				9294B7062A7CB56E00F35787 /* AppDelegate.swift in Sources */,
+				9294B7362A7CBB7900F35787 /* detailTableViewCell.swift in Sources */,
 				9294B7082A7CB56E00F35787 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
