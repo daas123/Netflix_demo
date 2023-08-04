@@ -21,7 +21,7 @@ class ThirdTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollect
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionviewcell1", for: indexPath) as! FirstCollectionViewCell
-        var lbl = movies1[indexPath.row]
+        let lbl = movies1[indexPath.row]
         cell.labelcollectionview.text = lbl.label
         cell.imagecollectionview.image = UIImage(named: lbl.img)
         return cell

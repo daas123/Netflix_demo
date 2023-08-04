@@ -9,6 +9,11 @@ import UIKit
 
 class SecondCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var viewlbl: UIView!
     @IBOutlet weak var collectviewimage: UIImageView!
-    @IBOutlet weak var collectionviewlabel: UILabel!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        viewlbl.layer.cornerRadius = 5
+        collectviewimage.layer.cornerRadius = 5
+    }
 }

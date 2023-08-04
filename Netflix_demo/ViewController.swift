@@ -59,7 +59,7 @@ class ViewController: UIViewController {
 extension ViewController : UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -96,12 +96,14 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
             cell.fouthcelllabel.text = arr2[indexPath.row-4]
             cell.rightarrow.image = UIImage(named: "chevron.right")
             return cell
-        }
-
-        else
-        {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell3", for: indexPath ) as! ThirdTableViewCell
-            cell.collectioview.tag = indexPath.section
+        }else if indexPath.row == 7{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell6", for: indexPath ) as! SixthTableViewCell
+            cell.collectionview3.tag = indexPath.section
+            return cell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell4", for: indexPath ) as! FourthTableViewCell
+            cell.fouthcelllabel.text = "sorry no vlaues"
+            cell.rightarrow.image = UIImage(named: "chevron.right")
             return cell
         }
         

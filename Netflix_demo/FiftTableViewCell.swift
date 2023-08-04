@@ -21,9 +21,8 @@ class FiftTableViewCell: UITableViewCell, UICollectionViewDelegate , UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionviewcell2", for: indexPath) as! SecondCollectionViewCell
-        var lbl = movies1[indexPath.row]
-        cell.collectionviewlabel.text = lbl.label
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionviewcell2", for: indexPath) as! SecondCollectionViewCell
+        let lbl = movies1[indexPath.row]
         cell.collectviewimage.image = UIImage(named: lbl.img)
         return cell
     }
