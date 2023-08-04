@@ -59,7 +59,7 @@ class ViewController: UIViewController {
 extension ViewController : UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 7
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -91,7 +91,13 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell5", for: indexPath ) as! FiftTableViewCell
             cell.collectionview2.tag = indexPath.section
             return cell
+        }else if indexPath.row == 6{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell4", for: indexPath ) as! FourthTableViewCell
+            cell.fouthcelllabel.text = arr2[indexPath.row-4]
+            cell.rightarrow.image = UIImage(named: "chevron.right")
+            return cell
         }
+
         else
         {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell3", for: indexPath ) as! ThirdTableViewCell
@@ -104,7 +110,7 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0{
             return 180
-        }else if indexPath.row == 1 || indexPath.row == 2 || indexPath.row == 4{
+        }else if indexPath.row == 1 || indexPath.row == 2 || indexPath.row == 4 || indexPath.row == 6{
             return 45
         }else{
             return 191
