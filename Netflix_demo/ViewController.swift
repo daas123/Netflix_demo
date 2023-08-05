@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     ]
     
-    var arr2 = ["TVShows and movies that you liked", "My list" ,"My reminders"]
+    var arr2 = ["TVShows and movies that you liked", "My list" ,"My reminders","You liked"]
     
 //    //Array for first collection view
 //    var movies1 = [
@@ -74,7 +74,6 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath ) as! SecondTableViewCell
             cell.secondcelllabel.text = arr[indexPath.row-1].label
             cell.secondrowicon.image = UIImage(named: arr[indexPath.row-1].img)
-            cell.secondCellRightArrow.image = UIImage(named: "chevron.right")
             return cell
         }
         else if indexPath.row == 3{
@@ -85,7 +84,6 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
         } else if indexPath.row == 4{
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell4", for: indexPath ) as! FourthTableViewCell
             cell.fouthcelllabel.text = arr2[indexPath.row-4]
-            cell.rightarrow.image = UIImage(named: "chevron.right")
             return cell
         }else if indexPath.row == 5{
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell5", for: indexPath ) as! FiftTableViewCell
@@ -94,16 +92,22 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
         }else if indexPath.row == 6{
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell4", for: indexPath ) as! FourthTableViewCell
             cell.fouthcelllabel.text = arr2[indexPath.row-4]
-            cell.rightarrow.image = UIImage(named: "chevron.right")
             return cell
         }else if indexPath.row == 7{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell6", for: indexPath ) as! SixthTableViewCell
+            cell.collectionview3.tag = indexPath.section
+            return cell
+        }else if indexPath.row == 8{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell4", for: indexPath ) as! FourthTableViewCell
+            cell.fouthcelllabel.text = arr2[indexPath.row-7]
+            return cell
+        }else if indexPath.row == 9{
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell6", for: indexPath ) as! SixthTableViewCell
             cell.collectionview3.tag = indexPath.section
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell4", for: indexPath ) as! FourthTableViewCell
             cell.fouthcelllabel.text = "sorry no vlaues"
-            cell.rightarrow.image = UIImage(named: "chevron.right")
             return cell
         }
         
@@ -112,7 +116,7 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0{
             return 180
-        }else if indexPath.row == 1 || indexPath.row == 2 || indexPath.row == 4 || indexPath.row == 6{
+        }else if indexPath.row == 1 || indexPath.row == 2 || indexPath.row == 4 || indexPath.row == 6 || indexPath.row == 8{
             return 45
         }else{
             return 191

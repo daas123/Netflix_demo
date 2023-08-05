@@ -9,7 +9,6 @@ import UIKit
 
 class FourthTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var rightarrow: UIImageView!
     @IBOutlet weak var fouthcelllabel: UILabel!
     
     override func awakeFromNib() {

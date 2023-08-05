@@ -13,7 +13,6 @@ class SecondTableViewCell: UITableViewCell {
     
     @IBOutlet weak var secondcelllabel: UILabel!
     
-    @IBOutlet weak var secondCellRightArrow: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
