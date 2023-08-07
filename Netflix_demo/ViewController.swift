@@ -57,7 +57,11 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController : UITableViewDelegate , UITableViewDataSource ,CategoryRowDelegate {
+extension ViewController : UITableViewDelegate , UITableViewDataSource ,CategoryRowDelegate, OnclickButtonDelegate{
+    func ButtonTapped(_ label: String, _ img: String, _ des: String) {
+        
+    }
+    
     func cellTapped(_ label: String, _ img: String, _ des: String) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
         vc.desc = des
@@ -100,6 +104,7 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource ,Category
         }else if indexPath.row == 5{
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell5", for: indexPath ) as! FiftTableViewCell
             cell.collectionview2.tag = indexPath.section
+            cell.delegate = self
             return cell
         }else if indexPath.row == 6{
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell4", for: indexPath ) as! FourthTableViewCell

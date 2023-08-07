@@ -8,7 +8,7 @@
 import UIKit
 
 class FiftTableViewCell: UITableViewCell, UICollectionViewDelegate , UICollectionViewDataSource {
-    
+    weak var delegate:CategoryRowDelegate?
     var movies1 = [
            details(label: "Godzilla", img: "Godzilla",  des: "dfjdsf dsvdsjb"),
            details(label: "Avengers Endgame", img: "Avengers Endgame",  des: "dfjdsf dsvdsjb"),
@@ -23,10 +23,18 @@ class FiftTableViewCell: UITableViewCell, UICollectionViewDelegate , UICollectio
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionviewcell2", for: indexPath) as! SecondCollectionViewCell
         let lbl = movies1[indexPath.row]
+        cell.btnShare.tag = indexPath.row
+        cell.btnShare.addTarget(self, action: #selector(pushpage(_:)), for: .touchUpInside)
         cell.collectviewimage.image = UIImage(named: lbl.img)
         return cell
     }
-    
+
+    @objc func pushpage(_ sender:UIButton){
+        delegate?.cellTapped(movies1[sender.tag].label, movies1[sender.tag].img, movies1[sender.tag].des)
+    }
+//
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+//    }
     
     @IBOutlet weak var collectionview2: UICollectionView!
     
@@ -42,5 +50,9 @@ class FiftTableViewCell: UITableViewCell, UICollectionViewDelegate , UICollectio
         super.setSelected(selected, animated: animated)
 
     }
-
+    
+//    @IBAction func ButtonAction(_ sender: UIButton) {
+//        
+//    }
+    
 }
