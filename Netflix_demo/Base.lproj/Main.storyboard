@@ -262,7 +262,7 @@
                                                                         <rect key="frame" x="0.0" y="156" width="130" height="35"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGu-G4-lG5">
-                                                                                <rect key="frame" x="30.666666666666671" y="7.6666666666666572" width="69" height="20"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="35"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -272,8 +272,10 @@
                                                                         <color key="backgroundColor" red="0.4520142674" green="0.12948995830000001" blue="0.1629026234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="64Y-dG-LFS"/>
-                                                                            <constraint firstItem="lGu-G4-lG5" firstAttribute="centerX" secondItem="H3z-L6-Zgm" secondAttribute="centerX" id="i1S-Gp-lpF"/>
-                                                                            <constraint firstItem="lGu-G4-lG5" firstAttribute="centerY" secondItem="H3z-L6-Zgm" secondAttribute="centerY" id="w5Z-bF-0Ob"/>
+                                                                            <constraint firstItem="lGu-G4-lG5" firstAttribute="top" secondItem="H3z-L6-Zgm" secondAttribute="top" id="6uw-aB-O0v"/>
+                                                                            <constraint firstItem="lGu-G4-lG5" firstAttribute="leading" secondItem="H3z-L6-Zgm" secondAttribute="leading" id="Dvb-hY-avm"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="lGu-G4-lG5" secondAttribute="trailing" id="eyd-9Q-cxz"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="lGu-G4-lG5" secondAttribute="bottom" id="jl2-ua-T44"/>
                                                                         </constraints>
                                                                     </view>
                                                                 </subviews>
@@ -447,32 +449,6 @@
             </objects>
             <point key="canvasLocation" x="2738.1679389312976" y="-7.042253521126761"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Ez9-mi-520">
-            <objects>
-                <viewController id="yMo-xW-Shn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MSJ-xH-z8H">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iScreen Shoter - QuickTime Player - 230804101019" translatesAutoresizingMaskIntoConstraints="NO" id="wnR-oh-RgE">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="xYw-QT-yla"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="xYw-QT-yla" firstAttribute="bottom" secondItem="wnR-oh-RgE" secondAttribute="bottom" id="Idh-V8-GTQ"/>
-                            <constraint firstItem="wnR-oh-RgE" firstAttribute="leading" secondItem="xYw-QT-yla" secondAttribute="leading" id="eGT-Pf-opq"/>
-                            <constraint firstItem="xYw-QT-yla" firstAttribute="trailing" secondItem="wnR-oh-RgE" secondAttribute="trailing" id="srP-b5-pUO"/>
-                            <constraint firstItem="wnR-oh-RgE" firstAttribute="top" secondItem="xYw-QT-yla" secondAttribute="top" id="wtD-rR-MI6"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="grG-Kb-xlQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3709" y="-50"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="rrE-MZ-4Fq">
             <objects>
@@ -502,7 +478,6 @@
         <image name="bellicon" width="1300" height="1292"/>
         <image name="chevron.down" catalog="system" width="128" height="70"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
-        <image name="iScreen Shoter - QuickTime Player - 230804101019" width="740" height="1600"/>
         <image name="icon" width="159" height="153"/>
         <image name="paperplane" catalog="system" width="128" height="119"/>
         <systemColor name="systemBackgroundColor">
