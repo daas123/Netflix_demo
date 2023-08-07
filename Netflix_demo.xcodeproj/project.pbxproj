@@ -25,6 +25,7 @@
 		9294B7272A7CB57100F35787 /* Netflix_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294B7262A7CB57100F35787 /* Netflix_demoUITests.swift */; };
 		9294B7292A7CB57100F35787 /* Netflix_demoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294B7282A7CB57100F35787 /* Netflix_demoUITestsLaunchTests.swift */; };
 		9294B7362A7CBB7900F35787 /* detailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294B7352A7CBB7900F35787 /* detailTableViewCell.swift */; };
+		929CF3932A80AD4C0075BD41 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929CF3922A80AD4C0075BD41 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		9294B7262A7CB57100F35787 /* Netflix_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netflix_demoUITests.swift; sourceTree = "<group>"; };
 		9294B7282A7CB57100F35787 /* Netflix_demoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netflix_demoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9294B7352A7CBB7900F35787 /* detailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailTableViewCell.swift; sourceTree = "<group>"; };
+		929CF3922A80AD4C0075BD41 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				9294B7052A7CB56E00F35787 /* AppDelegate.swift */,
 				9294B7072A7CB56E00F35787 /* SceneDelegate.swift */,
 				9294B70B2A7CB56E00F35787 /* Main.storyboard */,
+				929CF3922A80AD4C0075BD41 /* SecondViewController.swift */,
 				9294B7092A7CB56E00F35787 /* ViewController.swift */,
 				9294B7352A7CBB7900F35787 /* detailTableViewCell.swift */,
 				9230ED352A7CCFE500C29185 /* SecondTableViewCell.swift */,
@@ -291,6 +294,7 @@
 				9230ED4E2A7D1FC800C29185 /* SecondCollectionViewCell.swift in Sources */,
 				9294B7062A7CB56E00F35787 /* AppDelegate.swift in Sources */,
 				9230ED4C2A7D1FAF00C29185 /* FiftTableViewCell.swift in Sources */,
+				929CF3932A80AD4C0075BD41 /* SecondViewController.swift in Sources */,
 				9230ED522A7D2CDC00C29185 /* ThirdCollectionViewCell.swift in Sources */,
 				9230ED3C2A7CE5A800C29185 /* FirstCollectionViewCell.swift in Sources */,
 				9294B7362A7CBB7900F35787 /* detailTableViewCell.swift in Sources */,

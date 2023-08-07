@@ -10,14 +10,15 @@ import UIKit
 struct details{
     var label:String
     var img: String
+    var des : String
 }
 
 class ViewController: UIViewController {
     
     // Array for notification and bellicon
     var arr = [
-        details(label: "Notification", img: "bellicon"),
-        details(label: "Download", img: "download")
+        details(label: "Notification", img: "bellicon" , des: "djdbsvbsfi"),
+        details(label: "Download", img: "download", des: "dnfdnnfodnf" )
     
     ]
     
@@ -56,7 +57,16 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController : UITableViewDelegate , UITableViewDataSource {
+extension ViewController : UITableViewDelegate , UITableViewDataSource ,CategoryRowDelegate {
+    func cellTapped(_ label: String, _ img: String, _ des: String) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        vc.desc = des
+        vc.heading = label
+        vc.pageimage = img
+        navigationController?.pushViewController(vc, animated: true)
+    }
+
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
@@ -79,10 +89,12 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource {
         else if indexPath.row == 3{
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell3", for: indexPath ) as! ThirdTableViewCell
             cell.collectioview.tag = indexPath.section
+            cell.delegate = self
             return cell
             
         } else if indexPath.row == 4{
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell4", for: indexPath ) as! FourthTableViewCell
+            
             cell.fouthcelllabel.text = arr2[indexPath.row-4]
             return cell
         }else if indexPath.row == 5{

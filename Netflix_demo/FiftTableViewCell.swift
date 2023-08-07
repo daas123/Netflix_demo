@@ -10,11 +10,11 @@ import UIKit
 class FiftTableViewCell: UITableViewCell, UICollectionViewDelegate , UICollectionViewDataSource {
     
     var movies1 = [
-           details(label: "Godzilla", img: "Godzilla" ),
-           details(label: "Avengers Endgame", img: "Avengers Endgame"),
-           details(label: "jocker", img: "jocker"),
-           details(label: "Joker (2019 Movie)", img: "Joker (2019 Movie)"),
-           details(label: "lord of the rings", img: "lord of the rings"),
+           details(label: "Godzilla", img: "Godzilla",  des: "dfjdsf dsvdsjb"),
+           details(label: "Avengers Endgame", img: "Avengers Endgame",  des: "dfjdsf dsvdsjb"),
+           details(label: "jocker", img: "jocker",  des: "dfjdsf dsvdsjb"),
+           details(label: "Joker (2019 Movie)", img: "Joker (2019 Movie)", des: "dfjdsf dsvdsjb"),
+           details(label: "lord of the rings", img: "lord of the rings", des: "dfjdsf dsvdsjb"),
        ]
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return movies1.count
